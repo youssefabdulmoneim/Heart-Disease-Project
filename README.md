@@ -33,7 +33,9 @@ This project implements a complete machine learning pipeline for heart disease p
 ## Dataset
 
 **Source**: UCI Heart Disease Dataset https://archive.ics.uci.edu/dataset/45/heart+disease
+
 **Size**: 303 instances, 13 attributes (features) 
+
 **Target**: Binary classification (0 = No heart disease, 1 = Heart disease present)
 
 ### Features
