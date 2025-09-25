@@ -10,8 +10,6 @@ A comprehensive machine learning project for predicting heart disease using the 
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [Pipeline Steps](#pipeline-steps)
-- [Results](#results)
-- [Model Performance](#model-performance)
 - [Technologies Used](#technologies-used)
 
 ## Project Overview
@@ -35,7 +33,7 @@ This project implements a complete machine learning pipeline for heart disease p
 ## Dataset
 
 **Source**: UCI Heart Disease Dataset https://archive.ics.uci.edu/dataset/45/heart+disease
-**Size**: 303 instances, 14 attributes  
+**Size**: 303 instances, 13 attributes (features) 
 **Target**: Binary classification (0 = No heart disease, 1 = Heart disease present)
 
 ### Features
@@ -121,49 +119,15 @@ Binary classification using:
 
 ### 5. Unsupervised Learning
 
-- **K-Means Clustering**: Partition-based clustering
+- **K-Means Clustering**: Partition-based clustering (elbow method to determine K)
 - **Hierarchical Clustering**: Agglomerative clustering with dendrograms
 - **Cluster Evaluation**: Silhouette Score, Adjusted Rand Index
-- **Pattern Discovery**: Compare clusters with actual disease labels
 
 ### 6. Hyperparameter Tuning
 
 - **GridSearchCV**: Exhaustive parameter search
 - **5-Fold Cross Validation**: Robust performance estimation
 - **F1-Score Optimization**: Balanced precision-recall optimization
-- **Baseline Comparison**: Performance improvement quantification
-
-## Results
-
-### Best Model Performance
-
-- **Algorithm**: [Will be determined by your results]
-- **F1-Score**: [Your best F1-score]
-- **Accuracy**: [Your best accuracy]
-- **AUC**: [Your best AUC score]
-
-### Feature Importance
-
-The most important features for heart disease prediction:
-
-1. [Feature 1] - [Importance score]
-2. [Feature 2] - [Importance score]
-3. [Feature 3] - [Importance score]
-
-### Key Insights
-
-- [Add your key findings from the analysis]
-- [Model performance comparisons]
-- [Feature importance insights]
-
-## Model Performance
-
-| Model               | Accuracy | Precision | Recall | F1-Score | AUC   |
-| ------------------- | -------- | --------- | ------ | -------- | ----- |
-| Logistic Regression | 0.XXX    | 0.XXX     | 0.XXX  | 0.XXX    | 0.XXX |
-| Decision Tree       | 0.XXX    | 0.XXX     | 0.XXX  | 0.XXX    | 0.XXX |
-| Random Forest       | 0.XXX    | 0.XXX     | 0.XXX  | 0.XXX    | 0.XXX |
-| SVM                 | 0.XXX    | 0.XXX     | 0.XXX  | 0.XXX    | 0.XXX |
 
 ## Technologies Used
 
@@ -173,21 +137,3 @@ The most important features for heart disease prediction:
 - **Visualization**: Matplotlib, Seaborn
 - **Model Persistence**: Joblib
 - **Development**: Jupyter Notebook
-
-### Key Libraries
-
-```
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
-scipy>=1.7.0
-joblib>=1.0.0
-```
-
-## Acknowledgments
-
-- UCI Machine Learning Repository for providing the Heart Disease dataset
-- Scikit-learn community for excellent machine learning tools
-- Contributors to the open-source libraries used in this project
